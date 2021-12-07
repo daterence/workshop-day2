@@ -9,6 +9,9 @@ public class Main {
         List<String> transactions = new ArrayList<>();
         BankAccount account = new BankAccount("John Smith", 200);
         account.deposit(123.45f);
+        account.deposit(50.00f);
+        System.out.println(account.getAccountBalance());
+        account.withdraw(50.00f);
         System.out.println(account.getAccountBalance());
     }
 }

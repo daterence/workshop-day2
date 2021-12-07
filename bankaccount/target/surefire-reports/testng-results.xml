@@ -1,83 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-06T20:20:37 SGT" name="Surefire suite" finished-at="2021-12-06T20:20:37 SGT" duration-ms="36">
+  <suite started-at="2021-12-07T09:29:57 SGT" name="Surefire suite" finished-at="2021-12-07T09:29:57 SGT" duration-ms="48">
     <groups>
     </groups>
-    <test started-at="2021-12-06T20:20:37 SGT" name="Surefire test" finished-at="2021-12-06T20:20:37 SGT" duration-ms="36">
+    <test started-at="2021-12-07T09:29:57 SGT" name="Surefire test" finished-at="2021-12-07T09:29:57 SGT" duration-ms="48">
       <class name="workshop.day2.AppTest">
-        <test-method signature="shouldAnswerWithTrue()" started-at="2021-12-06T20:20:37 SGT" name="shouldAnswerWithTrue" finished-at="2021-12-06T20:20:37 SGT" duration-ms="7" status="PASS">
+        <test-method signature="shouldAnswerWithTrue()" started-at="2021-12-07T09:29:57 SGT" name="shouldAnswerWithTrue" finished-at="2021-12-07T09:29:57 SGT" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldAnswerWithTrue -->
       </class> <!-- workshop.day2.AppTest -->
       <class name="workshop.day2.BankAccountTest">
-        <test-method signature="testDeposit()" started-at="2021-12-06T20:20:37 SGT" name="testDeposit" finished-at="2021-12-06T20:20:37 SGT" duration-ms="4" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError
-at org.junit.Assert.fail(Assert.java:87)
-at org.junit.Assert.assertTrue(Assert.java:42)
-at org.junit.Assert.assertTrue(Assert.java:53)
-at workshop.day2.BankAccountTest.testDeposit(BankAccountTest.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
-at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
-at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
-at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:81)
-at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:66)
-at org.testng.TestRunner$1.run(TestRunner.java:672)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.runJUnitWorkers(TestRunner.java:871)
-at org.testng.TestRunner.privateRunJUnit(TestRunner.java:701)
-at org.testng.TestRunner.run(TestRunner.java:594)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:198)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDeposit -->
-        <test-method signature="testGetBalance()" started-at="2021-12-06T20:20:37 SGT" name="testGetBalance" finished-at="2021-12-06T20:20:37 SGT" duration-ms="0" status="PASS">
+        <test-method signature="testGetBalance()" started-at="2021-12-07T09:29:57 SGT" name="testGetBalance" finished-at="2021-12-07T09:29:57 SGT" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetBalance -->
+        <test-method signature="testGetName()" started-at="2021-12-07T09:29:57 SGT" name="testGetName" finished-at="2021-12-07T09:29:57 SGT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetName -->
+        <test-method signature="testGetTransactions()" started-at="2021-12-07T09:29:57 SGT" name="testGetTransactions" finished-at="2021-12-07T09:29:57 SGT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTransactions -->
+        <test-method signature="testWithdraw()" started-at="2021-12-07T09:29:57 SGT" name="testWithdraw" finished-at="2021-12-07T09:29:57 SGT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithdraw -->
+        <test-method signature="testWithdrawFromClosedAccount()" started-at="2021-12-07T09:29:57 SGT" name="testWithdrawFromClosedAccount" finished-at="2021-12-07T09:29:57 SGT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithdrawFromClosedAccount -->
+        <test-method signature="testGetAccountNumber()" started-at="2021-12-07T09:29:57 SGT" name="testGetAccountNumber" finished-at="2021-12-07T09:29:57 SGT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAccountNumber -->
+        <test-method signature="testWithdrawMoreThanBalance()" started-at="2021-12-07T09:29:57 SGT" name="testWithdrawMoreThanBalance" finished-at="2021-12-07T09:29:57 SGT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithdrawMoreThanBalance -->
+        <test-method signature="testDepositNegativeAmount()" started-at="2021-12-07T09:29:57 SGT" name="testDepositNegativeAmount" finished-at="2021-12-07T09:29:57 SGT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDepositNegativeAmount -->
+        <test-method signature="testDeposit()" started-at="2021-12-07T09:29:57 SGT" name="testDeposit" finished-at="2021-12-07T09:29:57 SGT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeposit -->
+        <test-method signature="testCreateDateNotBlank()" started-at="2021-12-07T09:29:57 SGT" name="testCreateDateNotBlank" finished-at="2021-12-07T09:29:57 SGT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateDateNotBlank -->
+        <test-method signature="testCloseDateNotBlank()" started-at="2021-12-07T09:29:57 SGT" name="testCloseDateNotBlank" finished-at="2021-12-07T09:29:57 SGT" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCloseDateNotBlank -->
       </class> <!-- workshop.day2.BankAccountTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->

@@ -49,8 +49,13 @@ public class BankAccount {
         return isClosed;
     }
 
-    public void setClosed(boolean closed) {
-        isClosed = closed;
+    public void setClosed(boolean isClosed) {
+        this.isClosed = isClosed;
+        if(this.isClosed){
+            closedDate = createTimeStamp();
+        } else{
+            closedDate = null;
+        }
     }
 
     public String getCreateDate() {
@@ -68,6 +73,12 @@ public class BankAccount {
     public void setClosedDate(String closedDate) {
         this.closedDate = closedDate;
     }
+
+    //create time stamp
+    private String createTimeStamp(){
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEE. d MMM yyyy HH:mm:ss Z");
+        return simpleDateFormat.format(new Date());
+    }
     // first constructor
     public BankAccount(String name) {
         this.name = name;
@@ -79,37 +90,35 @@ public class BankAccount {
             accNumber = accNumber.concat(element);
         }
         this.accountNumber = accNumber;
-        this.transactions = new ArrayList<>();
+        transactions = new ArrayList<>();
+        createDate = createTimeStamp();
     }
     // second constructor
     public BankAccount(String name, float accountBalance){
         this.name = name;
         this.accountBalance = accountBalance;
-        this.transactions = new ArrayList<>();
+        transactions = new ArrayList<>();
+        createDate = createTimeStamp();
     }
 
     // deposit method
     public void deposit(float amount){
-        Date date = Calendar.getInstance().getTime();
-        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm");
-        String strDate = dateFormat.format(date);
-        if(amount<0 || isClosed()){
+        boolean isNegativeAmount = 0.0 - amount > 0.001;
+        if(isNegativeAmount == true || isClosed){
             throw new IllegalArgumentException("Enter a positive value");
         }
-        String transaction = "deposit $" + amount + " at " + strDate;
+        String transaction = "deposit $" + amount + " at " + createTimeStamp();
         transactions.add(transaction);
         this.accountBalance += amount;
     }
 
     // withdraw method
     public void withdraw(float amount){
-        Date date = Calendar.getInstance().getTime();
-        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm");
-        String strDate = dateFormat.format(date);
-        if(amount<0 || amount > this.accountBalance || isClosed()){
+        boolean isNegativeAmount = 0.0 - amount > 0.001;
+        if(isNegativeAmount == true || amount > this.accountBalance || isClosed){
             throw new IllegalArgumentException("Enter a positive value");
         }
-        String transaction =  "withdraw $" + amount + " at " + strDate;
+        String transaction =  "withdraw $" + amount + " at " + createTimeStamp();
         transactions.add(transaction);
         this.accountBalance -= amount;
     }

@@ -9,36 +9,21 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">36</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">48</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">workshop.day2.BankAccountTest</td><td><a href="#m0">testDeposit</a></td><td rowspan="1">1638793237221</td><td rowspan="1">4</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">workshop.day2.AppTest</td><td><a href="#m1">shouldAnswerWithTrue</a></td><td rowspan="1">1638793237206</td><td rowspan="1">7</td></tr><tr class="passedodd"><td rowspan="1">workshop.day2.BankAccountTest</td><td><a href="#m2">testGetBalance</a></td><td rowspan="1">1638793237221</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">workshop.day2.AppTest</td><td><a href="#m0">shouldAnswerWithTrue</a></td><td rowspan="1">1638840597140</td><td rowspan="1">7</td></tr><tr class="passedodd"><td rowspan="11">workshop.day2.BankAccountTest</td><td><a href="#m1">testCloseDateNotBlank</a></td><td rowspan="1">1638840597157</td><td rowspan="1">8</td></tr><tr class="passedodd"><td><a href="#m2">testCreateDateNotBlank</a></td><td rowspan="1">1638840597157</td><td rowspan="1">7</td></tr><tr class="passedodd"><td><a href="#m3">testDeposit</a></td><td rowspan="1">1638840597157</td><td rowspan="1">8</td></tr><tr class="passedodd"><td><a href="#m4">testDepositNegativeAmount</a></td><td rowspan="1">1638840597157</td><td rowspan="1">7</td></tr><tr class="passedodd"><td><a href="#m5">testGetAccountNumber</a></td><td rowspan="1">1638840597157</td><td rowspan="1">8</td></tr><tr class="passedodd"><td><a href="#m6">testGetBalance</a></td><td rowspan="1">1638840597156</td><td rowspan="1">8</td></tr><tr class="passedodd"><td><a href="#m7">testGetName</a></td><td rowspan="1">1638840597156</td><td rowspan="1">7</td></tr><tr class="passedodd"><td><a href="#m8">testGetTransactions</a></td><td rowspan="1">1638840597156</td><td rowspan="1">7</td></tr><tr class="passedodd"><td><a href="#m9">testWithdraw</a></td><td rowspan="1">1638840597156</td><td rowspan="1">8</td></tr><tr class="passedodd"><td><a href="#m10">testWithdrawFromClosedAccount</a></td><td rowspan="1">1638840597157</td><td rowspan="1">7</td></tr><tr class="passedodd"><td><a href="#m11">testWithdrawMoreThanBalance</a></td><td rowspan="1">1638840597157</td><td rowspan="1">8</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">workshop.day2.BankAccountTest#testDeposit</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at workshop.day2.BankAccountTest.testDeposit(BankAccountTest.java:19)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">workshop.day2.AppTest#shouldAnswerWithTrue</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">workshop.day2.BankAccountTest#testGetBalance</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Surefire test</h2><h3 id="m0">workshop.day2.AppTest#shouldAnswerWithTrue</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">workshop.day2.BankAccountTest#testCloseDateNotBlank</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">workshop.day2.BankAccountTest#testCreateDateNotBlank</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">workshop.day2.BankAccountTest#testDeposit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">workshop.day2.BankAccountTest#testDepositNegativeAmount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">workshop.day2.BankAccountTest#testGetAccountNumber</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">workshop.day2.BankAccountTest#testGetBalance</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">workshop.day2.BankAccountTest#testGetName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">workshop.day2.BankAccountTest#testGetTransactions</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">workshop.day2.BankAccountTest#testWithdraw</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">workshop.day2.BankAccountTest#testWithdrawFromClosedAccount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">workshop.day2.BankAccountTest#testWithdrawMoreThanBalance</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

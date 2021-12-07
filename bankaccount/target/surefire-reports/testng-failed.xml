@@ -5,7 +5,7 @@
     <classes>
       <class name="org.junit.runner.Description">
         <methods>
-          <include name="testDeposit"/>
+          <include name="testCloseDateNotBlank"/>
         </methods>
       </class> <!-- org.junit.runner.Description -->
     </classes>
